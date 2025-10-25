@@ -7,6 +7,7 @@ export interface CarouselItem {
   description: string;
   id: number;
   icon: React.ReactNode;
+  image: string;
 }
 
 export interface CarouselProps {
@@ -138,6 +139,8 @@ const Carousel = forwardRef<{ setIndex: (index: number) => void }, CarouselProps
       }`}
       style={{
         width: `${baseWidth}px`,
+        maxWidth: '100%',
+        height: round ? `${baseWidth}px` : "auto",
         ...(round && { height: `${baseWidth}px` })
       }}
     >
@@ -171,21 +174,36 @@ const Carousel = forwardRef<{ setIndex: (index: number) => void }, CarouselProps
               } overflow-hidden cursor-grab active:cursor-grabbing`}
               style={{
                 width: itemWidth,
-                height: round ? itemWidth : '100%',
+                height: round ? itemWidth : itemWidth * 0.5675,
                 rotateY: rotateY,
                 ...(round && { borderRadius: '50%' })
               }}
               transition={effectiveTransition}
             >
-              <div className={`${round ? 'p-0 m-0' : 'mb-4 p-5'}`}>
-                <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060010]">
-                  {item.icon}
-                </span>
-              </div>
-              <div className="p-5">
-                <div className="mb-1 font-black text-lg text-white">{item.title}</div>
-                <p className="text-sm text-white">{item.description}</p>
-              </div>
+              {item.image ? (
+                <div className="w-full h-full relative overflow-hidden">  {/* ← Wrapper con tamaño 100% */}
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover select-none pointer-events-none"  // ← object-cover para mantener proporción
+                    style={{ objectPosition: 'center' }}  // ← Centrar la imagen
+                    draggable={false}
+                    onDragStart={(e) => e.preventDefault()}
+                  />
+                </div>
+              ) : (
+                <>
+                  <div className={`${round ? 'p-0 m-0' : 'mb-4 p-5'}`}>
+                    <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#060010]">
+                      {item.icon}
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <div className="mb-1 font-black text-lg text-white">{item.title}</div>
+                    <p className="text-sm text-white">{item.description}</p>
+                  </div>
+                </>
+              )}
             </motion.div>
           );
         })}
