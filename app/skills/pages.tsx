@@ -4,7 +4,7 @@ import ScrollVelocitySkills from "@/components/skills/scrollVelocitySkills";
 
 export default function SkillsPage() {
   return (
-    <section id="habilidades" className="py-20 px-4 w-full min-h-screen font-mono">
+    <section id="habilidades" className=" w-full min-h-screen font-mono">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
