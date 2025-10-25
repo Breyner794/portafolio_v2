@@ -7,9 +7,9 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4"> {/* Cambié de 6xl a 7xl */}
             <h2 className="text-4xl sm:text-5xl text-center mb-20 font-mono ">Acerca de Mí</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-4 md:gap-6">
 
-                <div className="lg:col-span-1 flex flex-col gap-2 md:gap-3">
+                <div className="flex flex-col gap-2 md:gap-3">
                     <div className="rounded-lg overflow-hidden p-4">
                         <div className="flex flex-col items-center justify-center space-y-4">
                             <div className="w-40 h-40 overflow-hidden border-4 rounded-full border-blue-500">
@@ -47,8 +47,8 @@ export default function About() {
                                         </a>
 
                                         <a
-                                            href="/path-to-your-cv.pdf"
-                                            download
+                                            href="cv/CV_Breyner_Quilindo.pdf"
+                                            download ="Breyner-Quilindo-CV.pdf"
                                             className="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm rounded-lg transition-colors"
                                         >
                                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -81,7 +81,7 @@ export default function About() {
                 </div>
 
                 {/* Terminal - Ocupa 2 columnas (más espacio) */}
-                <div className="lg:col-span-2 flex items-center">
+                <div className="flex items-center">
                     <ImprovedTerminalProfile />
                 </div>
 
