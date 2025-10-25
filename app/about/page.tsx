@@ -1,10 +1,6 @@
-import {
-    AnimatedSpan,
-    Terminal,
-    TypingAnimation,
-} from "@/components/ui/terminal"
 import ScrambledText from "@/components/ui/ScrambledText";
 import ImagePixel from "@/components/imagesPixel/imagePixel";
+import ImprovedTerminalProfile from "@/components/terminalPortafolio/ImprovedTerminalProfile";
 
 export default function About() {
     return (
@@ -30,6 +26,37 @@ export default function About() {
                                     <p className="text-sm text-orange-600">
                                         Desarrollador Web
                                     </p>
+
+                                    <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
+                                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                                        </svg>
+                                        <span>Cali, Colombia</span>
+                                    </div>
+
+                                    <div className="flex flex-wrap justify-center gap-3 pt-2">
+                                        <a
+                                            href="mailto:jhoanquilindo@gmail.com"
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors"
+                                        >
+                                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                            </svg>
+                                            Contactar
+                                        </a>
+
+                                        <a
+                                            href="/path-to-your-cv.pdf"
+                                            download
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white text-sm rounded-lg transition-colors"
+                                        >
+                                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                                            </svg>
+                                            Descargar CV
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +71,10 @@ export default function About() {
                                 className="!m-0 !max-w-none w-full text-sm md:text-base lg:text-lg text-center leading-relaxed"
                                 style={{ color: "#000000ff" }}
                             >
-                                "Apasionado por la tecnología y la resolución de problemas, siempre buscando aprender y crecer en el mundo del desarrollo de software."
+                                "De mantener infraestructuras críticas a construir soluciones digitales.
+                                Combino 3+ años en TI con desarrollo Full Stack para crear tecnología
+                                que no solo funciona y escala, sino que facilita el trabajo y reduce
+                                la intervención manual."
                             </ScrambledText>
                         </div>
                     </div>
@@ -52,32 +82,7 @@ export default function About() {
 
                 {/* Terminal - Ocupa 2 columnas (más espacio) */}
                 <div className="lg:col-span-2 flex items-center">
-                    <Terminal
-                        sequence={true}
-                        startOnView={true}
-                        className="w-full"
-                    >
-                        <TypingAnimation duration={50}>$ init --profile breyner.quilindo</TypingAnimation>
-                        <AnimatedSpan className="text-green-500">✔ Loading profile...</AnimatedSpan>
-                        <AnimatedSpan className="text-green-500">✔ Validating credentials...</AnimatedSpan>
-
-                        <AnimatedSpan className="text-blue-500">→ Tecnólogo en Sistemas | 2+ años experiencia</AnimatedSpan>
-                        <AnimatedSpan className="text-blue-500">→ Soporte multi-sede (CO/EC) | +30% eficiencia</AnimatedSpan>
-                        <AnimatedSpan className="text-blue-500">→ Stack: JavaScript, Python, HTML/CSS, SQL/NoSQL, Git</AnimatedSpan>
-                        <AnimatedSpan className="text-blue-500">→ Especialidad: Troubleshooting, Hardware/Software, Infraestructura</AnimatedSpan>
-
-                        <TypingAnimation duration={40}>$ cat mission.md</TypingAnimation>
-                        <AnimatedSpan className="text-orange-400">"Crear soluciones que faciliten el trabajo,</AnimatedSpan>
-                        <AnimatedSpan className="text-orange-400">resolver problemas y compartir conocimiento"</AnimatedSpan>
-
-                        <TypingAnimation duration={50} className="text-green-500">✔ Profile ready. Type 'help' for more info.</TypingAnimation>
-                        <TypingAnimation duration={60}>$ exit</TypingAnimation>
-                        <AnimatedSpan className="text-red-600">Closing session...</AnimatedSpan>
-                        <AnimatedSpan className="text-blue-500">
-                            <span>ℹ Updated 1 file:</span>
-                            <span className="pl-2">- lib/Thanks_for_visiting.ts</span>
-                        </AnimatedSpan>
-                    </Terminal>
+                    <ImprovedTerminalProfile />
                 </div>
 
             </div>

@@ -2,6 +2,8 @@ import TextType from "@/components/letter_style/TextType";
 import DecryptedText from "@/components/letter_style/DescripText";
 import AnimatedScrollDown from "@/components/scrolls/AnimatedScrollDown";
 import About from "./about/page";
+import SkillsPage from "./skills/pages";
+import ProjectsPages from "./projects/pages";
 
 export default function Home() {
   return (
@@ -44,11 +46,13 @@ export default function Home() {
       </section>
 
       {/* SECCIÓN 3: Mis Habilidades */}
-      <section id="habilidades" className="py-20 px-4 w-full mb-20">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl text-center mb-8">Skills</h2>
-          {/* ... Grid de iconos o tarjetas de habilidades ... */}
-        </div>
+      <section id="habilidades" className="py-20 px-4 w-full mb-8">
+              <SkillsPage />
+      </section>
+
+      {/* SECCIÓN 3: Mis Habilidades */}
+      <section id="proyectos" className="py-20 px-4 w-full mb-8">
+              <ProjectsPages/>
       </section>
     </main>
   );
