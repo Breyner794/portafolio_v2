@@ -6,6 +6,18 @@ export default function ImagePixel() {
             <PixelTransition
                 firstContent={
                     <img
+                            src="/images/Avatar_Notion.jpg"
+                            alt="Logo"
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                display: "block",
+                            }}
+                        />
+                }
+                secondContent={
+                        <img
                         src="https://res.cloudinary.com/dibpc6jxc/image/upload/v1758030246/barberpro_avatars/yocrstjnb8wqqlmtbxog.jpg"
                         alt="Profile picture"
                         style={{
@@ -17,18 +29,6 @@ export default function ImagePixel() {
                             padding: 0
                         }}
                     />
-                }
-                secondContent={
-                        <img
-                            src="/images/Avatar_Notion.jpg"
-                            alt="Logo"
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover",
-                                display: "block",
-                            }}
-                        />
                 }
                 gridSize={6}
                 pixelColor='#ffffffff'
