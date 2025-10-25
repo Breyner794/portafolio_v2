@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full">
       {/* SECCIÓN 1: Hero */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center w-full px-4">
+      <section id='Home' className="relative min-h-screen flex flex-col items-center justify-center w-full px-4">
         <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center mb-20">
           <h1 className="mb-4">
             <TextType
@@ -46,13 +46,13 @@ export default function Home() {
       </section>
 
       {/* SECCIÓN 3: Mis Habilidades */}
-      <section id="habilidades" className="py-20 px-4 w-full mb-8">
-              <SkillsPage />
+      <section id="habilidades" className="py-20 px-4 w-full">
+        <SkillsPage />
       </section>
 
       {/* SECCIÓN 3: Mis Habilidades */}
-      <section id="proyectos" className="py-20 px-4 w-full mb-8">
-              <ProjectsPages/>
+      <section id="proyectos" className="py-20 px-4 w-full">
+        <ProjectsPages />
       </section>
     </main>
   );
