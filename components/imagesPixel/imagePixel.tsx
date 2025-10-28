@@ -1,3 +1,5 @@
+'use client'
+
 import PixelTransition from "@/components/imagesPixel/PixelTransition";
 
 export default function ImagePixel() {
