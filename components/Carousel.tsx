@@ -24,7 +24,7 @@ export interface CarouselProps {
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
-const SPRING_OPTIONS = { type: 'spring', stiffness: 300, damping: 30 };
+const SPRING_OPTIONS = { type: 'spring', stiffness: 300, damping: 30 } as const;
 
 const Carousel = forwardRef<{ setIndex: (index: number) => void }, CarouselProps>(
   ({
