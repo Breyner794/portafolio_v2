@@ -84,7 +84,8 @@ export default function About() {
 
                 {/* Terminal - Ocupa 2 columnas (más espacio) */}
                 <div className="flex items-center">
-                    <ImprovedTerminalProfile />
+                    {/* <ImprovedTerminalProfile /> */}
+                    prueba.
                 </div>
 
             </div>
