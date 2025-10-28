@@ -71,10 +71,10 @@ export default function About() {
                                 className="!m-0 !max-w-none w-full text-sm md:text-base lg:text-lg text-center leading-relaxed"
                                 style={{ color: "#000000ff" }}
                             >
-                                "De mantener infraestructuras críticas a construir soluciones digitales.
+                                De mantener infraestructuras críticas a construir soluciones digitales.
                                 Combino 3+ años en TI con desarrollo Full Stack para crear tecnología
                                 que no solo funciona y escala, sino que facilita el trabajo y reduce
-                                la intervención manual."
+                                la intervención manual.
                             </ScrambledText>
                         </div>
                     </div>
