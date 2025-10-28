@@ -1,6 +1,7 @@
 import React from "react";
 import { ImScissors } from "react-icons/im";
 import { MdOutlineAirplanemodeActive, MdAirlines, MdOutlineDocumentScanner } from "react-icons/md";
+import { GrGamepad } from "react-icons/gr";
 
 export interface Project {
   id: number;
@@ -14,6 +15,7 @@ export interface Project {
   tech: string[];
   image: string;
   demoUrl?: string;
+  instaLinkColaborate?: string;
   codeUrl?: string;
   frontendUrl?: string;
   backendUrl?: string;
@@ -82,6 +84,23 @@ export const projects: Project[] = [
             image: "https://res.cloudinary.com/dibpc6jxc/image/upload/v1761421887/398490862-4f606b0a-c316-4e24-ac83-f32eddf9c967_idy8qa.jpg",
             demoUrl:"",
             codeUrl: "https://github.com/Breyner794/primer_paso_tesseract",
+            frontendUrl: "",
+            backendUrl: ""
+        },
+        {
+            id: 5,
+            title: "TEKINOO 2099",
+            icon: <GrGamepad />,
+            status: "Completado",
+            year: "2025",
+            longDescription: "Proyecto de desarrollo digital y fusión artística llevado a cabo con el Artista Cultural caleño David Fonseca. El resultado es una experiencia web única, diseñada como un portal interactivo con la apariencia y manejo de una máquina arcade. Este enfoque busca ofrecer una manera nostálgica y atractiva para que el público se sumerja en el universo audiovisual del artista, utilizando los controles físicos del arcade como un innovador medio de interacción para acceder a sus videos y publicaciones.",
+            client: "BICHO R4R",
+            duration: "1 meses",
+            tech: ["JavaScript", "HTML", "CSS"],
+            image: "https://res.cloudinary.com/dibpc6jxc/image/upload/v1761667853/Captura_de_pantalla_2025-10-28_111000_mngspx.png",
+            demoUrl:"https://tekino20999.netlify.app/",
+            instaLinkColaborate: "https://www.instagram.com/bicharrooo_/",
+            codeUrl: "",
             frontendUrl: "",
             backendUrl: ""
         }
