@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Carousel, { CarouselItem } from '@/components/Carousel';
 import { projects } from '@/src/data/project';
+import { FaInstagram } from "react-icons/fa";
 
 export default function Projects() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -143,6 +144,14 @@ export default function Projects() {
                                     className="flex-1 bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 cursor-pointer">
                                     <span>Ver Código</span>
                                     <span>{'</>'}</span>
+                                </a>
+                            )}
+
+                            {currentProject.instaLinkColaborate && (
+                                <a href={currentProject.instaLinkColaborate} target="_blank" rel="noopener noreferrer"
+                                    className="flex-1 bg-gradient-to-tr from-purple-700 via-pink-500 to-yellow-400 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 cursor-pointer">
+                                    <span>Instagram del Artista</span>
+                                    <span><FaInstagram /></span>
                                 </a>
                             )}
 
