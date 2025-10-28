@@ -34,7 +34,7 @@ export const projects: Project[] = [
             duration: "7 meses",
             tech: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Railway", "Cloudinary"],
             image: "https://res.cloudinary.com/dibpc6jxc/image/upload/v1761413577/CdS_g5pamv.png",
-            demoUrl:"https://testingbarbershop.netlify.app/login",
+            demoUrl:"https://testingbarbershop.netlify.app",
             codeUrl: "",
             frontendUrl: "https://github.com/Breyner794/Barber_shop_V2",
             backendUrl: "https://github.com/Breyner794/backend-barbershop"
