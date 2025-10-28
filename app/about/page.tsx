@@ -1,3 +1,5 @@
+'use client'
+
 import ScrambledText from "@/components/ui/ScrambledText";
 import ImagePixel from "@/components/imagesPixel/imagePixel";
 import ImprovedTerminalProfile from "@/components/terminalPortafolio/ImprovedTerminalProfile";
