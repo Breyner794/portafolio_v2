@@ -1,5 +1,3 @@
-'use client'
-
 import ScrambledText from "@/components/ui/ScrambledText";
 import ImagePixel from "@/components/imagesPixel/imagePixel";
 import ImprovedTerminalProfile from "@/components/terminalPortafolio/ImprovedTerminalProfile";
@@ -84,8 +82,7 @@ export default function About() {
 
                 {/* Terminal - Ocupa 2 columnas (más espacio) */}
                 <div className="flex items-center">
-                    {/* <ImprovedTerminalProfile /> */}
-                    prueba.
+                    <ImprovedTerminalProfile />
                 </div>
 
             </div>
