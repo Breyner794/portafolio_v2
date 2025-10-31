@@ -15,7 +15,7 @@ export default function About() {
                     <div className="rounded-lg overflow-hidden p-4">
                         <div className="flex flex-col items-center justify-center space-y-4">
                             <div className="w-40 h-40 overflow-hidden border-4 rounded-full border-blue-500">
-                                {/* <ImagePixel /> */}
+                                <ImagePixel />
                             </div>
                             <div className="text-center space-y-2 font-mono">
                                 <h3 className="font-bold text-xl tracking-tight">
